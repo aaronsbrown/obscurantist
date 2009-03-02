@@ -1,10 +1,5 @@
-@import compass/utilities/general/reset.sass
 @import compass/utilities/general/clearfix.sass
 @import 960/grid.sass
-
-+global-reset
-ul 
-  :list-style none
 
 //----------------- TYPOGRAPHY -----------------------
 html
@@ -18,78 +13,66 @@ body
   :letter-spacing .02em
   :text-align justify
 
-h1, h2, h3, h4, h5, h6, .caption
+h1, h3, h4, h5, h6, .caption
   :font-family Helvetica, Arial, sans-serif 
 
-.caption
-  :font-style italic
-
 h1
-  :font-weight bold
-  :font-size 28.34px
-  :line-height 39px
+  :font-size 2.18em
+  :line-height 1.376em
+  :margin-top .688em
+  :margin-bottom .52em
 
 h2
-  :font-size 21.32px
-  :line-height 26px
+  :font-size 1.69em
 
 h3
   :font-size 1.45em
   :line-height 1.03em
-
-h4, h5, h6
-  :font-size 1.18em
-  :line-height 1.27em
-
-div.title h1
-  :font
-    :family "Adobe Caslon Pro", "Hoefler Text", Georgia, Garamond, Times, serif
-    :size 5.53em
-  :text-align center
-  :line-height .271em
-
-#footer h2
-  :font
-    :family "Adobe Caslon Pro", "Hoefler Text", Georgia, Garamond, Times, serif
-    :style italic
-  :text-align center
-
-.publication-info
-  :font-size 21.32px
-  :text-align center
-  :line-height 29px
-
-.caption
-  :font-size 9px
-  :line-height 19px
-
-//------------------- LAYOUT -------------------------
-
-h1
-  :margin-top 13px
-  :margin-bottom 13px
-
-div.title h1
-  :margin-top .271em
-  :margin-bottom .271em
-
-h2
-  :margin-top 26px     
-  :margin-bottom 26px
-
-h3
   :margin-top 1.03em     
   :margin-bottom 1.03em
 
 h4, h5, h6
+  :font-size 1.18em
+  :line-height 1.27em
   :margin-top 1.27em     
   :margin-bottom 1.27em
 
 p
-  :margin-bottom 19.5px
+  :margin-bottom 1.5em
+  &.last 
+    :margin-bottom 0
+
+h1.title
+  :font
+    :family "Adobe Caslon Pro", "Hoefler Text", Georgia, Garamond, Times, serif
+    :size 5.53em
+  :text-align center
+  :line-height 0
+  :margin-top 1.084em
+  :margin-bottom .467em
+
+#footer h2
+  :line-height .515em
+  :margin-top 2.745em
+  :margin-bottom .915em
+  :font-style italic
+  :text-align center
 
 .publication-info
-  :margin-bottom 8px
+  :text-align center
+  :padding-top .1em
+
+.article
+  :margin-bottom 1.5em
+
+.caption
+  :font
+    :size .76em
+    :style italic
+  :line-height 1.95em
+  :margin-top -.4em
+
+//------------------- LAYOUT -------------------------
 
 #container
   +grid-container
@@ -120,13 +103,14 @@ p
         +grid(7,12)
         +alpha
         li
-          :background transparent url('../images/bullet.gif') left top no-repeat
+          :background transparent url('../images/bullet.gif') left -1px no-repeat
           :margin-left 30px
           :padding-left 50px
           :padding-right 30px
     .captioned-photo
       +grid(5,12)
       +omega
+      :padding-top 2.2em
 
   #secondary-content
     +grid(12,12)
@@ -151,6 +135,7 @@ p
 #grid-switch
   :position absolute
   :padding-left 800px
+  :margin-top 1.75em
   :width 140px
   a
     :margin 0 20px
