@@ -1,0 +1,170 @@
+@import compass/utilities/general/reset.sass
+@import compass/utilities/general/clearfix.sass
+@import 960/grid.sass
+
+@import
+
+//+global-reset
+
+
+
+ul 
+  :list-style none
+
+//----------------- TYPOGRAPHY -----------------------
+html
+  :font-size 100%
+
+body
+  :font
+    :size 81.25%
+    :family "Adobe Caslon Pro", "Hoefler Text", Georgia, Garamond, Times, serif
+  :line-height 1.5
+  :letter-spacing .02em
+  :text-align justify
+
+h1, h2, h3, h4, h5, h6, .caption
+  :font-family Helvetica, Arial, sans-serif 
+
+.caption
+  :font-style italic
+
+h1
+  :font-weight bold
+  :font-size 28.34px
+  :line-height 39px
+
+h2
+  :font-size 21.32px
+  :line-height 26px
+
+h3
+  :font-size 1.45em
+  :line-height 1.03em
+
+h4, h5, h6
+  :font-size 1.18em
+  :line-height 1.27em
+
+div.title h1
+  :font
+    :family "Adobe Caslon Pro", "Hoefler Text", Georgia, Garamond, Times, serif
+    :size 5.53em
+  :text-align center
+  :line-height .271em
+
+#footer h2
+  :font
+    :family "Adobe Caslon Pro", "Hoefler Text", Georgia, Garamond, Times, serif
+    :style italic
+  :text-align center
+
+.publication-info
+  :font-size 21.32px
+  :text-align center
+  :line-height 29px
+
+.caption
+  :font-size 9px
+  :line-height 19px
+
+//------------------- LAYOUT -------------------------
+
+h1
+  :margin-top 13px
+  :margin-bottom 13px
+
+div.title h1
+  :margin-top .271em
+  :margin-bottom .271em
+
+h2
+  :margin-top 26px     
+  :margin-bottom 26px
+
+h3
+  :margin-top 1.03em     
+  :margin-bottom 1.03em
+
+h4, h5, h6
+  :margin-top 1.27em     
+  :margin-bottom 1.27em
+
+p
+  :margin-bottom 19.5px
+
+.publication-info
+  :margin-bottom 8px
+
+#container
+  +grid-container
+  +clearfix
+
+  .title
+    +grid(12,12)
+
+  .publication-info
+    +grid(12,12)
+    :border-top 1px solid black
+    :border-bottom 1px solid black
+    .volume
+      +grid(2,12)
+      +alpha
+    .date
+      +grid(8,12)
+    .number
+      +grid(2,12)
+      +omega
+    
+  #main-content
+    +grid(12,12)
+    .article
+      +grid(7,12)
+      +alpha
+      ul
+        +grid(7,12)
+        +alpha
+        li
+          :background transparent url('../images/bullet.gif') left top no-repeat
+          :margin-left 30px
+          :padding-left 50px
+          :padding-right 30px
+    .captioned-photo
+      +grid(5,12)
+      +omega
+
+  #secondary-content
+    +grid(12,12)
+    img
+      +grid(5,12)
+      +alpha
+    div
+      +grid(7,12)
+      +omega
+
+  #footer
+    +grid(12,12)
+
+
+//------------------ GRID OVERLAY -------------------- 
+.baseline-grid-overlay
+  :background transparent url('../images/base-line-grid.png') top left repeat-x
+
+.grid-overlay
+  :background transparent url('../images/12_col.png') top left repeat-y
+
+#grid-switch
+  :position absolute
+  :padding-left 800px
+  :width 140px
+  a
+    :margin 0 20px
+    :padding 5px 0
+    :color #FFF
+    :background-color #333
+    :text-align center
+    :display block
+    :text-decoration none
+    :-moz-border-radius 4px
+    &:hover
+      :background-color #FF5247
