@@ -109,9 +109,9 @@ body
       +grid(2,12)
       +omega
     
-  #main-content
+  #article
     +grid(12,12)
-    .article
+    .body
       +grid(7,12)
       +alpha
       ul
@@ -127,12 +127,12 @@ body
       +omega
       :padding-top 2.2em
 
-  #secondary-content
+  #sidebar
     +grid(12,12)
     img
       +grid(5,12)
       +alpha
-    div
+    .body
       +grid(7,12)
       +omega
 
@@ -146,20 +146,21 @@ body
 .grid-overlay
   :background transparent url('../images/12_col.png') top left repeat-y
 
-#grid-switch
+#actions
   :position absolute
   :padding-left 800px
   :margin-top 1.75em
   :width 140px
-  a
-    :margin 0 20px
-    :padding 5px 0
-    :color #FFF
-    :background-color #333
-    :text-align center
-    :display block
-    :text-decoration none
-    :-moz-border-radius 4px
-    :-webkit-border-radius 4px
-    &:hover
-      :background-color #FF5247
+
+#grid-toggle
+  :margin 0 20px
+  :padding 5px 0
+  :color #FFF
+  :background-color #333
+  :text-align center
+  :display block
+  :text-decoration none
+  :-moz-border-radius 4px
+  :-webkit-border-radius 4px
+  &:hover
+    :background-color #FF5247
