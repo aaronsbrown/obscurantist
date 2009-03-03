@@ -17,13 +17,13 @@ p.last { margin-bottom: 0; }
 
 h1.title { font-family: "Adobe Caslon Pro", "Hoefler Text", Georgia, Garamond, Times, serif; font-size: 5.53em; text-align: center; line-height: 0; margin-top: 1.084em; margin-bottom: .467em; }
 
-#footer h2 { line-height: .515em; margin-top: 2.745em; margin-bottom: .915em; font-style: italic; text-align: center; }
+#tagline { line-height: .515em; margin-top: 2.745em; margin-bottom: .915em; font-style: italic; text-align: center; }
 
-.publication-info { text-align: center; padding-top: .1em; }
+.publication-info { text-align: center; font-variant: small-caps; padding-top: .1em; }
 
 .article { margin-bottom: 1.5em; }
 
-.caption { font-size: .76em; font-style: italic; line-height: 1.95em; margin-top: -.4em; }
+.caption { font-size: .846em; font-style: italic; line-height: 1.77em; margin-top: -.3em; }
 
 #container { margin-left: auto; margin-right: auto; width: 960px; overflow: auto; overflow: -moz-scrollbars-none; display: inline-block; }
 #container { display: block; }
@@ -40,12 +40,12 @@ h1.title { font-family: "Adobe Caslon Pro", "Hoefler Text", Georgia, Garamond, T
 #container #secondary-content { display: inline; float: left; margin-left: 10px; margin-right: 10px; width: 940px; }
 #container #secondary-content img { display: inline; float: left; margin-left: 10px; margin-right: 10px; width: 380px; margin-left: 0; }
 #container #secondary-content div { display: inline; float: left; margin-left: 10px; margin-right: 10px; width: 540px; margin-right: 0; }
-#container #footer { display: inline; float: left; margin-left: 10px; margin-right: 10px; width: 940px; }
+#container #tagline { display: inline; float: left; margin-left: 10px; margin-right: 10px; width: 940px; }
 
 .baseline-grid-overlay { background: transparent url('../images/base-line-grid.png') top left repeat-x; }
 
 .grid-overlay { background: transparent url('../images/12_col.png') top left repeat-y; }
 
 #grid-switch { position: absolute; padding-left: 800px; margin-top: 1.75em; width: 140px; }
-#grid-switch a { margin: 0 20px; padding: 5px 0; color: #FFF; background-color: #333; text-align: center; display: block; text-decoration: none; -moz-border-radius: 4px; }
+#grid-switch a { margin: 0 20px; padding: 5px 0; color: #FFF; background-color: #333; text-align: center; display: block; text-decoration: none; -moz-border-radius: 4px; -webkit-border-radius: 4px; }
 #grid-switch a:hover { background-color: #FF5247; }

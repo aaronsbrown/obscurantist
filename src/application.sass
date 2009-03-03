@@ -1,7 +1,7 @@
 @import compass/utilities/general/clearfix.sass
 @import 960/grid.sass
 
-//----------------- TYPOGRAPHY -----------------------
+//----------------- TYPOGRAPHY & VERTICAL RYHTHM -----------------------
 html
   :font-size 100%
 
@@ -51,7 +51,7 @@ h1.title
   :margin-top 1.084em
   :margin-bottom .467em
 
-#footer h2
+#tagline
   :line-height .515em
   :margin-top 2.745em
   :margin-bottom .915em
@@ -60,6 +60,7 @@ h1.title
 
 .publication-info
   :text-align center
+  :font-variant small-caps
   :padding-top .1em
 
 .article
@@ -67,12 +68,12 @@ h1.title
 
 .caption
   :font
-    :size .76em
+    :size .846em
     :style italic
-  :line-height 1.95em
-  :margin-top -.4em
+  :line-height 1.77em
+  :margin-top -.3em
 
-//------------------- LAYOUT -------------------------
+//------------------- GRID LAYOUT -------------------------
 
 #container
   +grid-container
@@ -121,9 +122,8 @@ h1.title
       +grid(7,12)
       +omega
 
-  #footer
+  #tagline
     +grid(12,12)
-
 
 //------------------ GRID OVERLAY -------------------- 
 .baseline-grid-overlay
@@ -146,5 +146,6 @@ h1.title
     :display block
     :text-decoration none
     :-moz-border-radius 4px
+    :-webkit-border-radius 4px
     &:hover
       :background-color #FF5247
