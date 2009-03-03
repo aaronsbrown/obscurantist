@@ -1,6 +1,10 @@
 @import compass/utilities/general/clearfix.sass
 @import 960/grid.sass
 
+!background_color = #dcd9c6
+!newspaper_background_color = #fffdf1
+!newspaper_text_color = #27261f
+
 //----------------- TYPOGRAPHY & VERTICAL RYHTHM -----------------------
 html
   :font-size 100%
@@ -72,6 +76,16 @@ h1.title
     :style italic
   :line-height 1.77em
   :margin-top -.3em
+
+
+//------------------ COLOR -------------------------------
+body
+  :background-color = !background_color
+
+#container
+  :color = !newspaper_text_color
+  :background-color = !newspaper_background_color
+
 
 //------------------- GRID LAYOUT -------------------------
 

@@ -25,6 +25,10 @@ h1.title { font-family: "Adobe Caslon Pro", "Hoefler Text", Georgia, Garamond, T
 
 .caption { font-size: .846em; font-style: italic; line-height: 1.77em; margin-top: -.3em; }
 
+body { background-color: #dcd9c6; }
+
+#container { color: #27261f; background-color: #fffdf1; }
+
 #container { margin-left: auto; margin-right: auto; width: 960px; overflow: auto; overflow: -moz-scrollbars-none; display: inline-block; }
 #container { display: block; }
 #container .title { display: inline; float: left; margin-left: 10px; margin-right: 10px; width: 940px; }
