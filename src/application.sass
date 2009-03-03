@@ -52,7 +52,7 @@ h1.title
     :size 5.53em
   :text-align center
   :line-height 1.084em
-  :margin-top .467em
+  :margin-top .25em
   :margin-bottom 0
 
 #tagline
@@ -90,7 +90,6 @@ body
 //------------------- GRID LAYOUT -------------------------
 
 #container
-  :position relative
   +grid-container
   +clearfix
 
@@ -116,8 +115,6 @@ body
       +grid(7,12)
       +alpha
       ul
-        +grid(7,12)
-        +alpha
         li
           :background transparent url('../images/bullet.gif') left -1px no-repeat
           :margin-left 30px
@@ -148,11 +145,9 @@ body
   :background transparent url('../images/12_col.png') top left repeat-y
 
 #actions
-  :position absolute
-  :top 0
-  :right 10px
   :margin-top 1.75em
   :width 140px
+  :padding-left 810px
 
 #grid-toggle
   :margin 0 20px

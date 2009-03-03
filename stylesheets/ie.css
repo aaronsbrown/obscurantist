@@ -1,0 +1,5 @@
+#container { behavior: url(resources/iepngfix.htc); }
+
+.captioned-photo img { behavior: url(resources/iepngfix.htc); }
+
+.caption { font-style: normal; }
