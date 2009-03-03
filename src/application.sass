@@ -51,13 +51,13 @@ h1.title
     :family "Adobe Caslon Pro", "Hoefler Text", Georgia, Garamond, Times, serif
     :size 5.53em
   :text-align center
-  :line-height 0
-  :margin-top 1.084em
-  :margin-bottom .467em
+  :line-height 1.084em
+  :margin-top .467em
+  :margin-bottom 0
 
 #tagline
-  :line-height .515em
-  :margin-top 2.745em
+  :line-height 1.515em
+  :margin-top 2.225em
   :margin-bottom .915em
   :font-style italic
   :text-align center
@@ -90,6 +90,7 @@ body
 //------------------- GRID LAYOUT -------------------------
 
 #container
+  :position relative
   +grid-container
   +clearfix
 
@@ -148,7 +149,8 @@ body
 
 #actions
   :position absolute
-  :padding-left 800px
+  :top 0
+  :right 10px
   :margin-top 1.75em
   :width 140px
 

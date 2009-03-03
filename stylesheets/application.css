@@ -15,9 +15,9 @@ h4, h5, h6 { font-size: 1.18em; line-height: 1.27em; margin-top: 1.27em; margin-
 p { margin-bottom: 1.5em; }
 p.last { margin-bottom: 0; }
 
-h1.title { font-family: "Adobe Caslon Pro", "Hoefler Text", Georgia, Garamond, Times, serif; font-size: 5.53em; text-align: center; line-height: 0; margin-top: 1.084em; margin-bottom: .467em; }
+h1.title { font-family: "Adobe Caslon Pro", "Hoefler Text", Georgia, Garamond, Times, serif; font-size: 5.53em; text-align: center; line-height: 1.084em; margin-top: .467em; margin-bottom: 0; }
 
-#tagline { line-height: .515em; margin-top: 2.745em; margin-bottom: .915em; font-style: italic; text-align: center; }
+#tagline { line-height: 1.515em; margin-top: 2.225em; margin-bottom: .915em; font-style: italic; text-align: center; }
 
 .publication-info { text-align: center; font-variant: small-caps; padding-top: .1em; }
 
@@ -29,7 +29,7 @@ body { background-color: #dcd9c6; }
 
 #container { color: #27261f; background-color: #fffdf1; }
 
-#container { margin-left: auto; margin-right: auto; width: 960px; overflow: auto; overflow: -moz-scrollbars-none; display: inline-block; }
+#container { position: relative; margin-left: auto; margin-right: auto; width: 960px; overflow: auto; overflow: -moz-scrollbars-none; display: inline-block; }
 #container { display: block; }
 #container .title { display: inline; float: left; margin-left: 10px; margin-right: 10px; width: 940px; }
 #container .publication-info { display: inline; float: left; margin-left: 10px; margin-right: 10px; width: 940px; border-top: 1px solid black; border-bottom: 1px solid black; }
@@ -50,7 +50,7 @@ body { background-color: #dcd9c6; }
 
 .grid-overlay { background: transparent url('../images/12_col.png') top left repeat-y; }
 
-#actions { position: absolute; padding-left: 800px; margin-top: 1.75em; width: 140px; }
+#actions { position: absolute; top: 0; right: 10px; margin-top: 1.75em; width: 140px; }
 
 #grid-toggle { margin: 0 20px; padding: 5px 0; color: #FFF; background-color: #333; text-align: center; display: block; text-decoration: none; -moz-border-radius: 4px; -webkit-border-radius: 4px; }
 #grid-toggle:hover { background-color: #FF5247; }
