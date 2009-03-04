@@ -40,16 +40,16 @@ body { background-color: #dcd9c6; }
 #container .publication-info .number { display: inline; float: left; margin-left: 10px; margin-right: 10px; width: 140px; margin-right: 0; }
 #container #article { display: inline; float: left; margin-left: 10px; margin-right: 10px; width: 940px; }
 #container #article .body { display: inline; float: left; margin-left: 10px; margin-right: 10px; width: 540px; margin-left: 0; }
-#container #article .body ul li { background: transparent url('../images/bullet.gif') left -1px no-repeat; margin-left: 30px; padding-left: 50px; padding-right: 30px; }
+#container #article .body ul li { background: transparent url(../images/bullet.gif) left -1px no-repeat; margin-left: 30px; padding-left: 50px; padding-right: 30px; }
 #container #article .captioned-photo { display: inline; float: left; margin-left: 10px; margin-right: 10px; width: 380px; margin-right: 0; padding-top: 2.2em; }
 #container #sidebar { display: inline; float: left; margin-left: 10px; margin-right: 10px; width: 940px; }
 #container #sidebar img { display: inline; float: left; margin-left: 10px; margin-right: 10px; width: 380px; margin-left: 0; }
 #container #sidebar .body { display: inline; float: left; margin-left: 10px; margin-right: 10px; width: 540px; margin-right: 0; }
 #container #tagline { display: inline; float: left; margin-left: 10px; margin-right: 10px; width: 940px; }
 
-.baseline-grid-overlay { background: transparent url('../images/base-line-grid.png') top left repeat-x; }
+.baseline-grid-overlay { background: transparent url(../images/base-line-grid.png) top left repeat-x; }
 
-.grid-overlay { background: transparent url('../images/12_col.png') top left repeat-y; }
+.grid-overlay { background: transparent url(../images/12_col.png) top left repeat-y; }
 
 #actions { margin-top: 1.75em; width: 140px; padding-left: 810px; }
 
